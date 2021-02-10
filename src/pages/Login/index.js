@@ -1,12 +1,11 @@
 import React from 'react';
-import { Button } from 'react-native';
+import { Button, TextInput } from 'react-native';
 
 import {Container,Form,Input,Title} from './styles'
 
-export default function Longin(){
+export default function Longin({navigation}){
     return (
     <Container>
-        <Title> Login</Title>
         <Form>
             <Input 
                 autoCapitalize="none"
@@ -17,7 +16,7 @@ export default function Longin(){
                 autoCapitalize="none"
                 autoCorrect={false}
                 placeholder="Senha"/>
-            <Button onPress={()=>{}} title="Login"/>
+            <Button onPress={()=>{navigation.navigate('Home')}} title="Login"/>
         </Form>
     </Container>)
 }

@@ -1,9 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
+import MyDrawer from '../../components/Drawer';
+
 
 
 export default function Home() {
-    return (<View>
-
-    </View>)
+    return (<MyDrawer/>)
 }
